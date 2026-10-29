@@ -1,0 +1,30 @@
+.sb-photo-editor { font-family:'SmartBorrow Thai',Tahoma,sans-serif; color:#263955; width:100%; max-width:650px; margin:auto; box-sizing:border-box; }
+.crop-layout { display:grid; grid-template-columns:minmax(0,1fr) 170px; gap:24px; align-items:center; }
+.crop-stage { position:relative; width:100%; max-width:380px; margin:auto; aspect-ratio:1; border-radius:16px; overflow:hidden; background:#e8edf5; }
+.crop-stage:after { content:''; position:absolute; inset:0; border-radius:50%; border:2px solid white; box-shadow:0 0 0 300px #1b203f66; pointer-events:none; box-sizing:border-box; }
+.crop-canvas { display:block; width:100%; height:100%; cursor:grab; touch-action:none; }
+.crop-canvas:active { cursor:grabbing; }
+.crop-canvas:focus-visible { outline:4px solid #8759d4; outline-offset:-4px; }
+.crop-hint { font-size:12px; line-height:1.7; color:#5e6f89; margin:10px 0 0; text-align:center; }
+.crop-preview-panel { display:flex; flex-direction:column; align-items:center; text-align:center; gap:12px; padding:20px 12px; border:1px solid #e2d7f6; background:linear-gradient(150deg,#f1eaff,#eef6ff); border-radius:18px; }
+.crop-kicker { font-size:12px; color:#734caf; }
+.crop-preview { width:112px; height:112px; border-radius:50%; border:4px solid white; box-shadow:0 4px 18px #43266b19; }
+.crop-preview-panel strong { font-size:14px; }
+.crop-preview-panel p { font-size:12px; color:#556880; line-height:1.7; margin:0; }
+.crop-zoom-header { display:flex; justify-content:space-between; align-items:center; margin-top:20px; font-size:14px; font-weight:600; }
+.crop-zoom-value { color:#7650b7; font-size:13px; }
+.crop-zoom { display:block; width:100%; min-height:40px; accent-color:#8759d4; cursor:pointer; }
+.crop-actions { display:flex; justify-content:space-between; gap:12px; margin-top:12px; }
+.crop-actions button { font-family:inherit; font-size:14px; min-height:44px; padding:10px 18px; border-radius:12px; cursor:pointer; }
+.crop-reset { color:#485c78; background:white; border:1px solid #dbe4f0; }
+.crop-save { color:white; background:linear-gradient(120deg,#e43b60,#cc264f); border:1px solid #d72e55; font-weight:600; }
+.crop-save:disabled { opacity:.6; cursor:wait; }
+.crop-actions button:focus-visible,.crop-zoom:focus-visible { outline:3px solid #386ce470; outline-offset:3px; }
+.crop-error { color:#b12448; font-size:13px; }
+@media(max-width:520px) {
+  .crop-layout { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .crop-preview-panel { flex-direction:row; text-align:left; justify-content:center; padding:10px; gap:12px; }
+  .crop-preview { width:60px; height:60px; }
+  .crop-preview-panel p,.crop-kicker { display:none; }
+  .crop-actions button { font-size:13px; padding:10px 12px; }
+}

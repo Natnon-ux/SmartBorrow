@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SmartBorrow: เปิดเว็บ (8502)",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "start.py",
+        "--server.headless=true",
+        "--server.port=8502"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONUTF8": "1"
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "runOptions": {
+        "instanceLimit": 1
+      }
+    },
+    {
+      "label": "SmartBorrow: ตรวจ SQLite",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "check_sqlite.py"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONUTF8": "1"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "SmartBorrow: ดูข้อมูลอุปกรณ์จาก SQL",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": [
+        "check_sqlite.py",
+        "--query",
+        "SELECT equipment_code, equipment_name, total_amount, available_amount, status FROM equipment ORDER BY equipment_name"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONUTF8": "1"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}

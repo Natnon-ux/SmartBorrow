@@ -1,0 +1,24 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+*.db-wal
+*.db-shm
+data/*.log
+data/smartborrow_test_*/
+data/smartborrow_assets_*/
+
+# ข้อมูลใช้งานจริงและไฟล์ตรวจภายใน ไม่เผยแพร่ขึ้น Git
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+data/
+output/
+outputs/
+.env
+.env.*
+!.env.example
+*.log
+~$*.docx

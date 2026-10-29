@@ -1,0 +1,83 @@
+/* แสงวิบวับตกแต่ง ไม่รับคลิก และหยุดเมื่อผู้ใช้ลดการเคลื่อนไหว */
+.stApp::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 7% 16%,#fff 0 2px,transparent 4px),
+    radial-gradient(circle at 30% 8%,#fff 0 1px,transparent 3px),
+    radial-gradient(circle at 48% 30%,#fff 0 2px,transparent 4px),
+    radial-gradient(circle at 82% 10%,#fff 0 2px,transparent 4px),
+    radial-gradient(circle at 94% 48%,#ffe2ee 0 3px,transparent 6px),
+    radial-gradient(circle at 65% 80%,#fff 0 2px,transparent 4px),
+    radial-gradient(circle at 18% 88%,#fff 0 2px,transparent 5px),
+    radial-gradient(ellipse at 15% 20%,#ffb2d333,transparent 42%),
+    radial-gradient(ellipse at 85% 75%,#bdb3ff33,transparent 40%);
+  animation: sb-sparkle-drift 12s ease-in-out infinite alternate;
+  will-change: opacity;
+}
+.stMain { position: relative; z-index: 1; }
+.st-key-auth_form,.st-key-auth_welcome,.st-key-top_navigation {
+  box-shadow:0 10px 30px #bc69b516,inset 0 1px 0 #ffffffb0;
+}
+.sb-brand-mark {
+  box-shadow:0 5px 18px #e4457140;
+}
+.stApp button[kind="primary"]:not(:disabled) {
+  position: relative;
+  overflow: hidden;
+}
+.stApp button[kind="primary"]:not(:disabled)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(110deg,transparent 25%,#ffffff45 47%,transparent 69%);
+  transform: translateX(-150%);
+  animation: none;
+}
+.stApp button[kind="primary"]:not(:disabled):hover {
+  box-shadow: 0 7px 24px #c5295140,inset 0 1px 0 #ffffff70;
+}
+@keyframes sb-sparkle-drift {
+  from { opacity:.35; }
+  to { opacity:.7; }
+}
+@keyframes sb-glass-glow {
+  from { box-shadow:0 12px 35px #b5416d0d,inset 0 1px 0 #ffffffc0; }
+  to { box-shadow:0 14px 38px #bc69b528,0 0 22px #ffffff70,inset 0 1px 0 #fff; }
+}
+@keyframes sb-logo-glow {
+  from { box-shadow:0 4px 14px #c52c4d25; }
+  to { box-shadow:0 5px 23px #e4457160,0 0 12px #ffc2dd80; }
+}
+@keyframes sb-button-shine {
+  0%,65% { transform:translateX(-150%); }
+  88%,100% { transform:translateX(150%); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .stApp::before,.st-key-auth_form,.st-key-auth_welcome,
+  .st-key-top_navigation,.sb-brand-mark,
+  .stApp button[kind="primary"]:not(:disabled)::after { animation:none; }
+  .stApp button[kind="primary"]:not(:disabled)::after { display:none; }
+}
+
+/* ลดการวาด blur ซ้อนหลายชั้นขณะเลื่อนและเปลี่ยนหน้า */
+.stApp { background-attachment:scroll !important; }
+.stApp .st-key-auth_form,.stApp .st-key-catalog_tools,
+.stApp [class*="st-key-workspacepage_"],.stApp [class*="st-key-gallery_card_"],
+.stApp [class*="st-key-gallery_row_"],.stApp .st-key-task_pickup_lane,
+.stApp .st-key-task_return_lane,.stApp .st-key-calendar_month_panel,
+.stApp .st-key-calendar_agenda,.stApp .sb-card-code,.stApp .sb-auth-photo-tag {
+  backdrop-filter:none; -webkit-backdrop-filter:none;
+}
+.stApp .st-key-top_navigation { backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); background:#fffffff0; }
+@media(hover:hover) and (prefers-reduced-motion:no-preference) {
+  .stApp button[kind="primary"]:not(:disabled):hover::after { animation:sb-button-shine 1.2s ease-out 1; }
+}
+@media(max-width:700px) {
+  .stApp::before { animation:none; opacity:.45; will-change:auto; }
+  .stApp .st-key-top_navigation { backdrop-filter:none; -webkit-backdrop-filter:none; }
+}

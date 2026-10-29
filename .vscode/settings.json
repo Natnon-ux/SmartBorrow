@@ -1,0 +1,27 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "terminal.integrated.env.windows": {
+    "PYTHONUTF8": "1"
+  },
+  "files.encoding": "utf8",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/output": true,
+    "**/.venv": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/output": true,
+    "**/data/backups": true
+  },
+  "sqlite.recordsPerPage": 50,
+  "sqlite.setupDatabase": {
+    "./smartborrow.db": {
+      "sql": [
+        "PRAGMA foreign_keys = ON;",
+        "PRAGMA busy_timeout = 10000;"
+      ]
+    }
+  }
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "code": "CAM001",
+    "path": "assets/equipment/products/CAM001-photo.jpg",
+    "source_page": "https://cameratk.com/product/sony-a7-iv-body/",
+    "source_image": "https://cameratk.com/wp-content/uploads/2022/10/Sony-Alpha-A7IV-Mirrorless-Camera-Body-Only-Online-Buy-India_1.jpg",
+    "representative": false
+  },
+  {
+    "code": "CAM002",
+    "path": "assets/equipment/products/CAM002-photo.jpg",
+    "source_page": "https://www.wexphotovideo.com/sony-a7-iii-digital-camera-body-1655930/",
+    "source_image": "https://www.wexphotovideo.com/globalassets/product-images/1655000/1655930.jpg?ver=638749716060000000",
+    "representative": false
+  },
+  {
+    "code": "PJ001",
+    "path": "assets/equipment/products/PJ001-photo.png",
+    "source_page": "https://www.epson.co.in/Projectors/Corporate-and-Education/Epson-EB-X49-3LCD-Projector/p/V11H982056",
+    "source_image": "https://mediaserver.goepson.com/adaptivemedia/rendition?id=ef729001e658131b144236a21754917989eb41fb&vid=ef729001e658131b144236a21754917989eb41fb&prid=original&clid=SAPDAM&prclid=productpictures&assetDescr=E01_b_No.3",
+    "representative": true,
+    "model": "Epson EB-X49",
+    "spec_source": "https://www.epson.eu/en_EU/products/projector/portable/eb-x49-projector/p/29758"
+  },
+  {
+    "code": "PJ002",
+    "path": "assets/equipment/products/PJ002-photo.png",
+    "source_page": "https://www.benq.com/en-us/business/projector/eh700.html",
+    "source_image": "https://image.benq.com/is/image/benqco/eh700-front30?wid=1000&fmt=png-alpha",
+    "representative": true,
+    "model": "BenQ EH700",
+    "spec_source": "https://www.benq.com/content/dam/edu/product/projectors/smart-series/datasheet/BenQ%20Smart%20Education%20Projector-EH700-datasheet.pdf"
+  },
+  {
+    "code": "MIC001",
+    "path": "assets/equipment/products/MIC001-saramonic-blink500-b2plus.webp",
+    "source_page": "https://www.saramonic.com/product/blink500-b2-plus",
+    "source_image": "https://oss.saramonic.com/uploads/images/20250213/20250213102045911.webp",
+    "representative": true,
+    "model": "Saramonic Blink500 B2+",
+    "spec_source": "https://www.saramonic.com/product/blink500-b2-plus"
+  },
+  {
+    "code": "SPK001",
+    "path": "assets/equipment/products/SPK001-photo.png",
+    "source_page": "https://www.jbl.com.sg/professional/EON710.html",
+    "source_image": "https://www.jbl.com.sg/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw719164d8/JBL_EON710_3-4_Extreme_1605x1605.png?sfrm=png&sw=537",
+    "representative": true,
+    "model": "JBL EON710",
+    "spec_source": "https://jblpro.com/en-US/products/jbl-eon710/1000"
+  },
+  {
+    "code": "NB002",
+    "path": "assets/equipment/products/NB002-photo.webp",
+    "source_page": "https://www.ryans.com/acer-aspire-15-as15-42-amd-ryzen-3-7330u-pure-silver-laptop",
+    "source_image": "https://www.ryans.com/storage/products/main/acer-aspire-15-as15-42-amd-ryzen-3-7330u-16gb-ram-11765261814.webp",
+    "representative": true,
+    "model": "Acer Aspire AS15-42 (Ryzen 3 7330U)",
+    "spec_source": "https://store.acer.com/en-in/acer-aspire-amd-ryzen-r3-7330u-processor-windows-11-home-8-gb-ram-512-gb-ssd-15-6-39-62-cm-display-pure-silver-as15-42-1-79-kg-thin-and-light-laptop"
+  },
+  {
+    "code": "TRI001",
+    "path": "assets/equipment/products/TRI001-photo.jpg",
+    "source_page": "https://www.manfrotto.com/ca-en/befree-aluminium-travel-tripod-with-ball-head-light-blue-mkbfra4l-bh/",
+    "source_image": "https://www.manfrotto.com/media/catalog/product/m/k/mkbfra4l-bh.jpg",
+    "representative": true,
+    "model": "Manfrotto Befree MKBFRA4L-BH",
+    "spec_source": "https://www.manfrotto.com/ca-en/befree-aluminium-travel-tripod-with-ball-head-light-blue-mkbfra4l-bh/"
+  },
+  {
+    "code": "LEN001",
+    "path": "assets/equipment/products/LEN001-photo.webp",
+    "source_page": "https://kenmorecamera.com/sony-fe-24-70mm-f-2-8-gm-ii/",
+    "source_image": "https://cdn11.bigcommerce.com/s-6eafq5t88w/images/stencil/original/products/37088/71150/117803c__46575.1651249633.jpg?c=1",
+    "representative": false
+  },
+  {
+    "code": "LEN002",
+    "path": "assets/equipment/products/LEN002-photo.png",
+    "source_page": "https://viltrox.com/products/af-50mm-f1-4-fe",
+    "source_image": "https://cdn.shopify.com/s/files/1/0104/0380/7298/files/AF_50mm_F1.4_Pro_FE-front_view.png?v=1760643277",
+    "representative": false
+  },
+  {
+    "code": "LEN003",
+    "path": "assets/equipment/products/LEN003-photo.jpg",
+    "source_page": "https://profoto.com.mx/products/lente-sigma-24-70mm-f-2-8-dg-dn-ii-art-para-sony-e",
+    "source_image": "https://profoto.com.mx/cdn/shop/files/LENTE_SIGMA_24-70_MM_F_2.8_DG_DN_II_ART_PARA_SONY_E_0001_204767.jpg?v=1740177943",
+    "representative": true
+  },
+  {
+    "code": "LEN004",
+    "path": "assets/equipment/products/LEN004-photo.jpg",
+    "source_page": "https://24h.pchome.com.tw/prod/DSBC40-A900BWZV1",
+    "source_image": "https://cs-d.ecimg.tw/items/DSBC40A900BWZV1/000001_1635217710.jpg",
+    "representative": true
+  },
+  {
+    "code": "MIC002",
+    "path": "assets/equipment/products/MIC002-photo.jpg",
+    "source_page": "https://dji-retail.co.uk/products/dji-mic-2-2-tx-1-rx-charging-case",
+    "source_image": "https://dji-retail.co.uk/cdn/shop/files/DJI-Mic-2-Combo-2-Transmitter-1-Receiver-Charging-Case-2.jpg?v=1712701580&width=1200",
+    "representative": true
+  },
+  {
+    "code": "MIC003",
+    "path": "assets/equipment/products/MIC003-photo.png",
+    "source_page": "https://prosoundeurope.com/products/rode-wireless-go-ii-dual-wireless-mic-system",
+    "source_image": "https://prosoundeurope.com/cdn/shop/products/rode-wireless-go-II-kit-front-triple-reciever-transmitter-jan-2021-1080x1080_800x.png?v=1674825540",
+    "representative": true
+  },
+  {
+    "code": "MIC004",
+    "path": "assets/equipment/products/MIC004-photo.jpg",
+    "source_page": "https://www.beatboxentertainment.com/products/shure-sm58-cardioid-dynamic-vocal-microphone",
+    "source_image": "https://www.beatboxentertainment.com/cdn/shop/products/sm58_front.jpg?v=1673798437&width=1200",
+    "representative": true
+  },
+  {
+    "code": "PEM01",
+    "path": "assets/equipment/products/PEM01-sony-zve10.jpg",
+    "model": "Sony ZV-E10",
+    "spec_source": "https://www.sony.co.th/en/interchangeable-lens-cameras/products/zv-e10",
+    "representative": true,
+    "source_image": "https://www.wexphotovideo.com/globalassets/product-images/3277000/3277886.jpg",
+    "source_page": "https://www.wexphotovideo.com/sony-zv-e10-digital-camera-with-16-50mm-f3-5-5-6-oss-ii-pz-lens-3277886/"
+  },
+  {
+    "code": "IOIO12",
+    "path": "assets/equipment/products/IOIO12-lenovo-ideapad-slim3-15irh8.jpg",
+    "model": "Lenovo IdeaPad Slim 3 15IRH8",
+    "source_page": "https://donicelectronics.com/products/ideapad-slim-3-15irh8",
+    "source_image": "https://donicelectronics.com/cdn/shop/files/IdeaPad_Slim_3_15IRH8_CT1_04.jpg?v=1762410711",
+    "spec_source": "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IRH8?M=83EM00KKPH",
+    "representative": true
+  }
+]

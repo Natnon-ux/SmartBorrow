@@ -1,0 +1,56 @@
+/* Noto Sans Thai แบบไม่มีหัว ใช้ไฟล์ในเครื่อง ไม่ต้องรอโหลดจาก Google */
+:root { --sb-display-font: 'SmartBorrow Thai', Tahoma, sans-serif; }
+html, body, .stApp, [data-testid="stAppViewContainer"],
+[data-testid="stDialog"], [data-testid="stPopoverBody"],
+[data-testid="stToast"], [data-baseweb="popover"], [role="listbox"],
+input, textarea, select, button,
+[data-testid="stMarkdownContainer"], [data-testid="stText"],
+[data-testid="stWidgetLabel"], [data-testid="stCaptionContainer"],
+[data-testid="stDataFrame"] {
+  font-family: var(--sb-display-font) !important;
+}
+input, textarea, select { font-size:16px !important; }
+/* กำหนดเฉพาะข้อความ เพื่อคงฟอนต์ไอคอน Material ของ Streamlit */
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stWidgetLabel"] p,
+[data-testid="stCaptionContainer"] p,
+button p, label p, [role="option"] div {
+  font-family: var(--sb-display-font) !important;
+  line-height:1.7;
+}
+.stApp h1, .stApp h2, .stApp h3,
+.stApp [data-testid="stHeading"] p,
+.stApp .sb-brand-name, .stApp .sb-brand-name span,
+.stApp .sb-top-context strong,
+.stApp [class*="st-key-nav_"] button p,
+.stApp .st-key-top_navigation button p,
+.stApp [role="tab"] p,
+.stApp [data-testid="stSegmentedControl"] button p {
+  font-family: var(--sb-display-font) !important;
+  line-height: 1.6;
+  letter-spacing: normal;
+}
+
+/* ตัวนับจำนวนของหน้าสมัครอยู่ใต้ช่อง ไม่ทับข้อความที่กำลังพิมพ์ */
+[class*="st-key-register_"] div:has(> [data-testid="InputInstructions"]) {
+  position: static !important;
+  width: 100%;
+  height: auto !important;
+}
+[class*="st-key-register_"] [data-testid="InputInstructions"] {
+  position: static !important;
+  display: flex !important;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  margin: 4px 0 0;
+  font: 14px/1.5 'SmartBorrow Thai', Tahoma, sans-serif;
+  color: #515b74;
+}
+[class*="st-key-register_"] [data-testid="InputInstructions"] > span:first-child:not(:last-child) {
+  display: none;
+}
+[class*="st-key-register_"] [data-testid="InputInstructions"] > span::before {
+  content: none !important;
+}
