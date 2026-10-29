@@ -22,3 +22,6 @@ outputs/
 !.env.example
 *.log
 ~$*.docx
+
+# คู่มือส่งงานเก็บในเครื่อง ไม่แสดงใน repository
+/เอกสารส่งงาน/
