@@ -14,7 +14,7 @@ SmartBorrow ช่วยให้ผู้ยืมเลือกอุปก�
 - [บทบาทและสิทธิ์](#บทบาทและสิทธิ์)
 - [ขั้นตอนยืมและคืน](#ขั้นตอนยืมและคืน)
 - [การติดตั้งและรัน](#การติดตั้งและรัน)
-- [การทดสอบและดูแลข้อมูล](#การทดสอบและดูแลข้อมูล)
+- [การดูแลข้อมูล](#การดูแลข้อมูล)
 
 ## ภาพหน้าจอ
 
@@ -83,7 +83,6 @@ SmartBorrow ช่วยให้ผู้ยืมเลือกอุปก�
 py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe tools/prepare_demo.py
-.\.venv\Scripts\python.exe check_sqlite.py
 .\.venv\Scripts\python.exe start.py --server.port=8502
 ```
 
@@ -93,14 +92,7 @@ py -3 -m venv .venv
 
 ถ้าพอร์ต 8502 ถูกใช้ ให้เปิดระบบที่รันอยู่ หรือหยุดตัวรันเดิมก่อนเริ่มใหม่ เปลี่ยนพอร์ตได้ด้วย `--server.port=8503` แล้วใช้ URL ตามพอร์ตนั้น
 
-## การทดสอบและดูแลข้อมูล
-
-```powershell
-.\.venv\Scripts\python.exe tools/test_system.py
-.\.venv\Scripts\python.exe check_sqlite.py
-```
-
-ชุดทดสอบใช้ฐานข้อมูลชั่วคราว แยกจากข้อมูลใช้งานจริง มีตัวช่วยทดสอบใน `tests/support` ครบในโครงการ
+## การดูแลข้อมูล
 
 SQLite ใช้ไฟล์ `smartborrow.db` ไม่ต้องติดตั้ง MySQL สำรองฐานข้อมูลและ `data/uploads/` คู่กันผ่านเมนูตั้งค่าของ Admin ก่อนปรับข้อมูล การสำรองเฉพาะฐานข้อมูลไม่รวมเอกสารและรูปที่แนบ
 
